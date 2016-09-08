@@ -1,0 +1,11 @@
+span {
+	background-color: #F4F4F4;
+	border: 1px solid gray;
+	padding: 3px;
+}
+
+/* text-decoration:none;是除去连接下的横线装饰 */
+a:link {color: black; text-decoration: none;}          /* 连接前的颜色 */
+a:visited {color: black;} 						      /* 访问过后的颜色 */
+a:hover {color: red; text-decoration: underline;} /* 鼠标放在上面时的颜色 */
+a:active {color: black;} 							  /* 点击是的颜色 */

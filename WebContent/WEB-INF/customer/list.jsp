@@ -5,6 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title></title>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
 </head>
 <body>
 	<table>
@@ -40,70 +42,70 @@
 	</table>
 	<div>
 		<br/>
-		<span>共[${pageBean.totalRecord }]条</span>
-		<span>每页[${pageBean.pageSize }]条</span>
-		<span>当前第[${pageBean.currentPage }]页</span>
-		<span>共[${pageBean.totalPage }]页</span>
+		<span>共${pageBean.totalRecord }条</span>
+		<span>每页${pageBean.pageSize }条</span>
+		<span>当前第${pageBean.currentPage }页</span>
+		<span>共${pageBean.totalPage }页</span>
 		
 		<!-- url为空，代表当前页面 -->
-		<a href="?currentPage=${pageBean.prevPage }">上一页</a>
+		<span><a href="?currentPage=${pageBean.prevPage }">&lt; 上一页</a></span>
 		
 		<!-- 当前在第一页 -->
 		<c:if test="${pageBean.currentPage == 1 }">
 			<c:if test="${pageBean.currentPage <= pageBean.totalPage }">
-				<a href="?currentPage=${pageBean.currentPage }">${pageBean.currentPage }</a>
+				<span><a href="?currentPage=${pageBean.currentPage }">${pageBean.currentPage }</a></span>
 			</c:if>
 			<c:if test="${pageBean.currentPage+1 <= pageBean.totalPage }">
-				<a href="?currentPage=${pageBean.currentPage+1 }">${pageBean.currentPage+1 }</a>
+				<span><a href="?currentPage=${pageBean.currentPage+1 }">${pageBean.currentPage+1 }</a></span>
 			</c:if>
 			<c:if test="${pageBean.currentPage+2 <= pageBean.totalPage }">
-				<a href="?currentPage=${pageBean.currentPage+2 }">${pageBean.currentPage+2 }</a>
+				<span><a href="?currentPage=${pageBean.currentPage+2 }">${pageBean.currentPage+2 }</a></span>
 			</c:if>
 			<c:if test="${pageBean.currentPage+2 < pageBean.totalPage }">
 				...
-				<a href="?currentPage=${pageBean.totalPage }">${pageBean.totalPage }</a>
+				<span><a href="?currentPage=${pageBean.totalPage }">${pageBean.totalPage }</a></span>
 			</c:if>
 		</c:if>
 		
 		<!-- 当前在中间页 -->
 		<c:if test="${pageBean.currentPage != 1 && pageBean.currentPage != pageBean.totalPage }">
 			<c:if test="${pageBean.currentPage-1 > 1 }">
-				<a href="?currentPage=1">1</a>
+				<span><a href="?currentPage=1">1</a></span>
 				...
 			</c:if>
 			<c:if test="${pageBean.currentPage-1 >= 1 }">	
-				<a href="?currentPage=${pageBean.currentPage-1 }">${pageBean.currentPage-1 }</a>
+				<span><a href="?currentPage=${pageBean.currentPage-1 }">${pageBean.currentPage-1 }</a></span>
 			</c:if>
 			<c:if test="${pageBean.currentPage <= pageBean.totalPage }">
-				<a href="?currentPage=${pageBean.currentPage }">${pageBean.currentPage }</a>
+				<span><a href="?currentPage=${pageBean.currentPage }">${pageBean.currentPage }</a></span>
 			</c:if>
 			<c:if test="${pageBean.currentPage+1 <= pageBean.totalPage }">
-				<a href="?currentPage=${pageBean.currentPage+1 }">${pageBean.currentPage+1 }</a>
+				<span><a href="?currentPage=${pageBean.currentPage+1 }">${pageBean.currentPage+1 }</a></span>
 			</c:if>
 			<c:if test="${pageBean.currentPage+1 < pageBean.totalPage }">
 				...
-				<a href="?currentPage=${pageBean.totalPage }">${pageBean.totalPage }</a>
+				<span><a href="?currentPage=${pageBean.totalPage }">${pageBean.totalPage }</a></span>
 			</c:if>
 		</c:if>
 		
 		<!-- 当前在最后一页 -->
 		<c:if test="${pageBean.currentPage == pageBean.totalPage && pageBean.currentPage != 1 }">
 			<c:if test="${pageBean.currentPage > 3 }">
-				<a href="?currentPage=1">1</a>
+				<span><a href="?currentPage=1">1</a></span>
 				...
 			</c:if>
 			<c:if test="${pageBean.currentPage-2 >= 1 }">
-				<a href="?currentPage=${pageBean.currentPage-2 }">${pageBean.currentPage-2 }</a>
+				<span><a href="?currentPage=${pageBean.currentPage-2 }">${pageBean.currentPage-2 }</a></span>
 			</c:if>
 			<c:if test="${pageBean.currentPage-1 >= 1 }">
-				<a href="?currentPage=${pageBean.currentPage-1 }">${pageBean.currentPage-1 }</a>
+				<span><a href="?currentPage=${pageBean.currentPage-1 }">${pageBean.currentPage-1 }</a></span>
 			</c:if>
 			<c:if test="${pageBean.currentPage <= pageBean.totalPage }">
-				<a href="?currentPage=${pageBean.currentPage }">${pageBean.currentPage }</a>
+				<span><a href="?currentPage=${pageBean.currentPage }">${pageBean.currentPage }</a></span>
 			</c:if>
 		</c:if>
 		
-		<a href="?currentPage=${pageBean.nextPage }">下一页</a>
+		<span><a href="?currentPage=${pageBean.nextPage }">下一页 &gt;</a></span>
 		
 	</div>
 </body>
