@@ -13,7 +13,7 @@
     <description></description>
     <display-name>CustomersServlet</display-name>
     <servlet-name>CustomersServlet</servlet-name>
-    <servlet-class>com.wxhledu.cn.web.CustomersServlet</servlet-class>
+    <servlet-class>com.pagingTechnique.cn.web.CustomersServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>CustomersServlet</servlet-name>

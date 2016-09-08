@@ -15,7 +15,7 @@ public class QueryInfo {
 	/**
 	 * 页面展示条数
 	 */
-	private int pageSize = 10;
+	private int pageSize = 5;
 
 	/**
 	 * 开始页面
