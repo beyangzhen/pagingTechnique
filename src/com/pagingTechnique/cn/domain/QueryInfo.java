@@ -1,4 +1,4 @@
-package com.wxhledu.cn.domain;
+package com.pagingTechnique.cn.domain;
 
 /**
  * 页面信息

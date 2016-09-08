@@ -1,11 +1,11 @@
-package com.wxhledu.cn.service.impl;
+package com.pagingTechnique.cn.service.impl;
 
-import com.wxhledu.cn.dao.CustomerDao;
-import com.wxhledu.cn.dao.impl.CustomerDaoImpl;
-import com.wxhledu.cn.domain.PageBean;
-import com.wxhledu.cn.domain.QueryInfo;
-import com.wxhledu.cn.domain.QueryResult;
-import com.wxhledu.cn.service.CustomerService;
+import com.pagingTechnique.cn.dao.CustomerDao;
+import com.pagingTechnique.cn.dao.impl.CustomerDaoImpl;
+import com.pagingTechnique.cn.domain.PageBean;
+import com.pagingTechnique.cn.domain.QueryInfo;
+import com.pagingTechnique.cn.domain.QueryResult;
+import com.pagingTechnique.cn.service.CustomerService;
 
 public class CustomerServiceImpl implements CustomerService {
 	

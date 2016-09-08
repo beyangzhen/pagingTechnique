@@ -1,4 +1,4 @@
-package com.wxhledu.cn.util;
+package com.pagingTechnique.cn.util;
 
 import java.io.IOException;
 import java.sql.Connection;

@@ -7,7 +7,7 @@ import java.util.Map;
 import org.apache.commons.beanutils.BeanUtils;
 import org.junit.Test;
 
-import com.wxhledu.cn.domain.QueryInfo;
+import com.pagingTechnique.cn.domain.QueryInfo;
 
 public class BeanUtilTest {
 

@@ -1,4 +1,4 @@
-package com.wxhledu.cn.web;
+package com.pagingTechnique.cn.web;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -11,10 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.beanutils.BeanUtils;
 
-import com.wxhledu.cn.domain.PageBean;
-import com.wxhledu.cn.domain.QueryInfo;
-import com.wxhledu.cn.service.CustomerService;
-import com.wxhledu.cn.service.impl.CustomerServiceImpl;
+import com.pagingTechnique.cn.domain.PageBean;
+import com.pagingTechnique.cn.domain.QueryInfo;
+import com.pagingTechnique.cn.service.CustomerService;
+import com.pagingTechnique.cn.service.impl.CustomerServiceImpl;
 
 /**
  * MVC：控制器作用，将用户请求的数据-》页面对象 --》service执行查询 -》封装的页面信息-》request ==》Dispacter

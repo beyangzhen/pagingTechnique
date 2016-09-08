@@ -1,4 +1,4 @@
-package com.wxhledu.cn.dao.impl;
+package com.pagingTechnique.cn.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,11 +7,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.wxhledu.cn.dao.CustomerDao;
-import com.wxhledu.cn.domain.Customer;
-import com.wxhledu.cn.domain.QueryInfo;
-import com.wxhledu.cn.domain.QueryResult;
-import com.wxhledu.cn.util.JdbcUtil;
+import com.pagingTechnique.cn.dao.CustomerDao;
+import com.pagingTechnique.cn.domain.Customer;
+import com.pagingTechnique.cn.domain.QueryInfo;
+import com.pagingTechnique.cn.domain.QueryResult;
+import com.pagingTechnique.cn.util.JdbcUtil;
 
 public class CustomerDaoImpl implements CustomerDao {
 

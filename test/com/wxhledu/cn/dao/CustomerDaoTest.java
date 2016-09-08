@@ -4,10 +4,11 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.wxhledu.cn.dao.impl.CustomerDaoImpl;
-import com.wxhledu.cn.domain.Customer;
-import com.wxhledu.cn.domain.QueryInfo;
-import com.wxhledu.cn.domain.QueryResult;
+import com.pagingTechnique.cn.dao.CustomerDao;
+import com.pagingTechnique.cn.dao.impl.CustomerDaoImpl;
+import com.pagingTechnique.cn.domain.Customer;
+import com.pagingTechnique.cn.domain.QueryInfo;
+import com.pagingTechnique.cn.domain.QueryResult;
 
 public class CustomerDaoTest {
 	

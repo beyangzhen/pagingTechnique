@@ -1,4 +1,4 @@
-package com.wxhledu.cn.domain;
+package com.pagingTechnique.cn.domain;
 
 import java.util.List;
 
