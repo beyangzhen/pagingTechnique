@@ -1,4 +1,4 @@
-package com.wxhledu.cn;
+package com.pagingTechnique.cn;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;

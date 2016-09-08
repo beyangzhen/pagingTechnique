@@ -1,4 +1,4 @@
-package com.wxhledu.cn.dao;
+package com.pagingTechnique.cn.dao;
 
 import java.util.List;
 
